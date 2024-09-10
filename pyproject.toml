@@ -1,0 +1,24 @@
+[project]
+name = "fickle-mode"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.4.1",
+    "torchvision>=0.19.1",
+    "tqdm>=4.66.5",
+]
+
+[project.scripts]
+fickle-mode-train = "fickle_mode.train:main"
+
+[tool.uv]
+dev-dependencies = [
+    "add-trailing-comma>=3.1.0",
+    "black>=24.8.0",
+    "isort>=5.13.2",
+]
+
+[tool.isort]
+profile = "black"
